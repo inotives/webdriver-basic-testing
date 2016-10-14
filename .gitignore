@@ -25,7 +25,9 @@ Desktop.ini
 #bower components
 bower_components
 
-# additional ignore folder
+# additional ignore folder or file
 ignore
 .migrate
 dist
+chromedriver
+selenium-server-standalone-2.53.1.jar

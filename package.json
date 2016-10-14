@@ -1,0 +1,22 @@
+{
+  "name": "selenium",
+  "version": "1.0.0",
+  "description": "testing selenium features",
+  "main": "index.js",
+  "scripts": {
+    "download-selenium": "curl -O http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.1.jar",
+    "download-driver": "curl -O http://chromedriver.storage.googleapis.com/2.9/chromedriver_mac32.zip",
+    "unzip-driver": "unzip chromedriver_mac32.zip",
+    "remove-driver-zip": "rm chromedriver_mac32.zip",
+    "init": "npm run download-selenium && npm run download-driver && npm run unzip-driver && npm run remove-driver-zip",
+    "selenium-server": "java -jar selenium-server-standalone-2.53.1.jar"
+  },
+  "keywords": [
+    "selenium"
+  ],
+  "author": "TONI",
+  "license": "ISC",
+  "dependencies": {
+    "webdriverio": "^4.2.16"
+  }
+}
